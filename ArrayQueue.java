@@ -44,10 +44,10 @@ public class ArrayQueue implements QueueInterface{
 		
 		if(size() != 0) {
 			result = "{";
-			for(int i = size()-1; i>=0; i--) {
+			for(int i = 0 ; i<=size()-1; i++) {
 				result += a[i];
 				
-				if(i != 0) 
+				if(i != size()-1) 
 					result += ", ";
 				else
 					result += "} ";
